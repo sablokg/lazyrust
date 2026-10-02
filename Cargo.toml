@@ -1,0 +1,15 @@
+[package]
+name = "lazy_smartcore"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "lazy_smartcore"
+path = "src/main.rs"
+
+[dependencies]
+smartcore = { version = "=0.4.0", features = ["datasets"] }
+clap = { version = "=4.4.18", features = ["derive"] }
+csv = "1"
+anyhow = "1"
+figlet-rs = "0.1.5"
